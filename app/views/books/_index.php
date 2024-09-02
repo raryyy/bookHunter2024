@@ -10,7 +10,7 @@
               </span>
               <img
                 class="w-full h-48 object-cover"
-                src="https://picsum.photos/200/300?random="
+                src="https://picsum.photos/200/300?random=1"
                 alt="Movie Cover"
               />
               <div class="p-4">
@@ -40,7 +40,7 @@
                 </p>
   
                 <a
-                  href="book.html"
+                  href="books/<?php echo $book['id']; ?>/<?php echo str_replace(' ','-',strtolower($book['title']))?>"
                   class="inline-block mt-4 bg-red-500 hover:bg-red-800 rounded-full px-4 py-2 text-white"
                 >
                   More details
